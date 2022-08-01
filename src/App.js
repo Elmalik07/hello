@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Hello React
+          Hello Ngor !
         </a>
       </header>
     </div>
