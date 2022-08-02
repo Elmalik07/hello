@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Hello Jenkins!
+          Hello Supdeco!
         </a>
       </header>
     </div>
