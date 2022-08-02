@@ -29,9 +29,9 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
-    - name: Deploy
-      - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
-        with:
-          heroku_api_key: ${{secrets.d9e6cb60-c4b2-4c06-a089-1c855ee2742f}}
-          heroku_app_name: "githubactionscicd" #Must be unique in Heroku
-          heroku_email: "malik.tiemogo@gmail.com"
+    - uses: actions/checkout@v2
+    - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+      with:
+        heroku_api_key: ${{secrets.d9e6cb60-c4b2-4c06-a089-1c855ee2742f}}
+        heroku_app_name: "githubactionscicd" #Must be unique in Heroku
+        heroku_email: "malik.tiemogo@gmail.com"
